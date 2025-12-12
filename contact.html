@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <style>
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: hwb(0 0% 100%);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <body>
+        <header>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>                
+            </nav>
+        </header>
+        <h1>Contact Me</h1>
+        <hr>
+        <form method="post" action="https://formsubmit.co/Brandonfigueroa0523@email.com">
+            <label for="name">Name</label><br>
+            <input type="text" placeholder= "Enter full name" name="name" required><br><br>
+            
+            <label for="email">Email</label><br>
+            <input type="email" placeholder="Enter your email" name="email" required><br><br>
+            
+            <label for="message">Message</label><br>
+            <textarea id="message" placeholder="Send me message" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    
+        <footer>
+            <p>&copy; 2024 Brandon Figueroa</p>
+        </footer>
+    </body>
+</html>
