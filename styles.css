@@ -21,7 +21,7 @@ nav{
     overflow: hidden;
     background-color: var(--navbg);
 }
-
+/* Navigation bar link styles*/
 nav a{
     float: left;
     display: block;
@@ -31,6 +31,7 @@ nav a{
     color: var(--fg);
 
 }
+/* Navigation bar hover effect*/
 nav a:hover{
     background-color: var(--fg);
     color: var(--navbg);
@@ -72,10 +73,45 @@ img{
     margin: 0 20%;
 }
 
+/*Intro links styles*/
+.intro a{
+    color: var(--fg);
+    text-decoration: underline;
+}
+
+/*Intro links hover effect*/
+.intro a:hover{
+    background-color: var(--fg);
+    color: var(--navbg);
+}   
+
+/*Contact form styles*/
 form{
     text-align: center;
     font-size: 20px;
     margin-top: 20px;
+}
+
+/*Projects section styles*/
+.projects{
+    text-align: justify;
+    text-indent: 50px;
+    align-items: center;
+    gap: 5rem;
+    font-size: 20px;
+    margin: 0 20%;
+}
+
+/*Project links styles*/
+.projects a{
+    color: var(--fg);
+    text-decoration: underline;
+}
+
+/*Project links hover effect*/
+.projects a:hover{
+    background-color: var(--fg);
+    color: var(--navbg);
 }
 
 
