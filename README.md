@@ -1,3 +1,2 @@
 # BigFigsCode.github.io
-CLICK ON THE HYPER LINK ABOVE "BIGFIGSCODE".
-This will direct you to my website.
+Website for my portfolio displaying an about me and contact information. Also some projects I have done. 
