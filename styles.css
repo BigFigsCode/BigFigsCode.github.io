@@ -17,12 +17,12 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 /* Navigation bar styles */
-nav{
+/*nav{
     overflow: hidden;
     background-color: var(--navbg);
 }
 /* Navigation bar link styles*/
-nav a{
+/*nav a{
     float: left;
     display: block;
     text-align: center;
@@ -32,13 +32,37 @@ nav a{
 
 }
 /* Navigation bar hover effect*/
-nav a:hover{
+/*nav a:hover{
     background-color: var(--fg);
     color: var(--navbg);
    
 }
 
 /*H1 styles*/
+/* Navigation bar styles */
+nav{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  background-color: var(--navbg);
+  padding: 8px;
+}
+/* Navigation bar link styles*/
+nav a{
+  float: none;              /* kills the float behavior */
+  display: inline-block;
+  padding: 12px 16px;
+  color: var(--fg);
+  text-decoration: none;
+}
+/* Navigation bar hover effect*/
+nav a:hover{
+  background-color: var(--fg);
+  color: var(--navbg);
+}
+
+
 body h1{
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,23 +79,27 @@ body h2{
 
 }
 /*image styles*/
-img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    border-radius: 8px;
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;   /* caps size on large screens */
+  width: 100%;        /* scales down on mobile */
+  height: auto;
+  border-radius: 8px;
 }
 
-/*Intro paragraph styles with div*/
-.intro{
-    text-align: justify;
-    text-indent: 50px;
-    align-items: center;
-    gap: 5rem;
-    font-size: 20px;
-    margin: 0 30%;
+/*Intro and Projects section styles*/
+.intro, .projects{
+  max-width: 800px;     /* readable line length */
+  margin: 0 auto;       /* centers the block */
+  padding: 0 16px;      /* breathing room on mobile */
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: left;     /* easier to read than justify */
+  text-indent: 0;       /* optional: remove indent on web */
 }
+
+
 
 /*Intro links styles*/
 .intro a{
@@ -92,15 +120,7 @@ form{
     margin-top: 20px;
 }
 
-/*Projects section styles*/
-.projects{
-    text-align: justify;
-    text-indent: 50px;
-    align-items: center;
-    gap: 5rem;
-    font-size: 20px;
-    margin: 0 20%;
-}
+
 
 /*Project links styles*/
 .projects a{
